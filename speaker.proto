@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message InputData {
+  string data = 1;
+};
+
+message OutputData {
+  string data = 1;
+};
+
+service Speaker {
+  rpc Speak (InputData) returns (OutputData);
+};
